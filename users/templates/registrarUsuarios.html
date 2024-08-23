@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ola tengo 17 añoas</h1>
+    <form method="post">
+        {$ csrf_token $}
+        {{form.as_p}}
+        <button type="submit">Registrar</button>
+    </form>
 </body>
 </html>
