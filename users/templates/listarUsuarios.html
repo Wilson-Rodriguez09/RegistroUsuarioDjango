@@ -12,16 +12,16 @@
         <p><b>Cedula: </b>{{Persona.cedula}}</p>
         <p><b>Email: </b>{{Persona.email}}</p>
         <p><b>Telefono: </b>{{Persona.telefono}}</p>
-        <p><b>Fecha: </b>{{Persona.fecha_Creacion}}</p>
-        {% if Persona.estado == 'Activo'  %}
+        <p><b>Fecha: </b>{{Persona.dateCreate}}</p>
+        {% if Persona.estado == 'activo'  %}
             <p style="color:green">Activo</p>
         {% endif %}
-        {% if Persona.estado == 'Inactivo'  %}
+        {% if Persona.estado == 'inactivo'  %}
             <p style="color:red">Inactivo</p>
         {% endif %}
         
         {% endfor %} 
-        <a href="crear/">Registrar mas usuarios</a>
+        <a href="registrar/">Registrar mas usuarios</a>
     </div>
 </body>
 </html>
